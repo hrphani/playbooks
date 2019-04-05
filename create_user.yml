@@ -1,6 +1,6 @@
 ---
 - name: Create users
-  hosts: "{{ host }}"
+  hosts: "all"
   tasks:
     - name: Create user
       user:
