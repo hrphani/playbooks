@@ -1,0 +1,10 @@
+---
+- name: Create users
+  hosts: "{{ host }}"
+  tasks:
+    - name: Create user
+      user:
+        name: phaniraj
+        shell: /bin/bash
+        uid: 1000
+        group: root
